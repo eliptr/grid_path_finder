@@ -38,15 +38,11 @@ This project simulates a vacuum cleaner navigating through a room represented as
 ## example
 - input.txt:
 
-5
-
-0 0
-
-4 4
-
-00000
-
-00100
+5 <br>
+0 0 <br>
+4 4 <br>
+00000 <br>
+00100 <br>
 
 00100
 
