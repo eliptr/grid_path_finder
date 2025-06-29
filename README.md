@@ -43,12 +43,9 @@ This project simulates a vacuum cleaner navigating through a room represented as
 4 4 <br>
 00000 <br>
 00100 <br>
-
-00100
-
-00100
-
-00000
+00100 <br>
+00100 <br>
+00000 <br>
 
 - Output:
   - The path as a string of directions (e.g., RRRRDDDD). 
