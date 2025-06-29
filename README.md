@@ -2,9 +2,9 @@
 
 This project simulates a vacuum cleaner navigating through a room represented as a 2D grid with obstacles. It calculates and prints the shortest path from the vacuum cleaner's starting position to a target position, avoiding obstacles and only turning at viable corners.
 
-Reads a 2D map of the room with obstacles.
-Detects all valid "corner" positions that can be used to change direction.
-Calculates the shortest viable path using a custom heuristic (A*-like approach).
+My program reads a 2D map of the room with obstacles.
+It detects all valid "corner" positions that can be used to change direction.
+It calculates the shortest viable path using a custom heuristic (A*-like approach).
 Outputs the path as a series of directions:
 L for Left
 R for Right
