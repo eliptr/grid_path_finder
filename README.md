@@ -58,8 +58,8 @@ This project simulates a vacuum cleaner navigating through a room represented as
 00000
 
 - Output:
-   The path as a string of directions (e.g., RRRRDDDD). <br>
-   The updated grid with the path marked: <br>
+  - The path as a string of directions (e.g., RRRRDDDD). 
+  - The updated grid with the path marked: 
   - 2 for visited path
   - 3 for start and target positions
 
@@ -70,7 +70,7 @@ This project simulates a vacuum cleaner navigating through a room represented as
 
 - Traversal Logic: Moves in straight lines between valid corners or endpoints only when the path is clear.
 
-##Limitations
+## Limitations
 Assumes a square grid.
 
 No real-time interactivity — input and output are done via terminal.
