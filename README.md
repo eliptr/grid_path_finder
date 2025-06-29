@@ -8,13 +8,10 @@ This project simulates a vacuum cleaner navigating through a room represented as
 - It detects all valid "corner" positions that can be used to change direction.
 - It calculates the shortest viable path using a custom heuristic (A*-like approach).
 - Outputs the path as a series of directions:
-  
-  L for Left
-  
-  R for Right
-  
-  U for Up
-  D for Down
+  - L for Left
+  - R for Right
+  - U for Up
+  - D for Down
 - Visualizes the final path in the grid.
 
 ## how to build and run
@@ -65,10 +62,8 @@ This project simulates a vacuum cleaner navigating through a room represented as
 
 ## How It Works
 - Corner Detection: Identifies all corner points in the map that the vacuum can use to change direction.
-
-- Pathfinding: Uses a simplified custom A* algorithm prioritizing shortest travel distance and fewer turns.
-
-- Traversal Logic: Moves in straight lines between valid corners or endpoints only when the path is clear.
+- Pathfinding: Uses a simplified custom A* algorithm prioritizing shortest travel distance and fewer turns with a custom priority queue.
+- Traversal Logic: At each node it detects all the possible nodes it can travel to if the path is clear and prioritizes them based on which is closer to the target.
 
 ## Limitations
 Assumes a square grid.
