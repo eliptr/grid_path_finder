@@ -4,8 +4,8 @@ This project simulates a vacuum cleaner navigating through a room represented as
 
 
 ## what it does
-* My program reads a 2D map of the room with obstacles.
-* It detects all valid "corner" positions that can be used to change direction.
+- My program reads a 2D map of the room with obstacles.
+- It detects all valid "corner" positions that can be used to change direction.
 * It calculates the shortest viable path using a custom heuristic (A*-like approach).
 * Outputs the path as a series of directions:
 * L for Left
@@ -14,10 +14,8 @@ This project simulates a vacuum cleaner navigating through a room represented as
 * D for Down
 * Visualizes the final path in the grid.
 
-The program expects input from stdin in the following format:
-php-template
-Copy
-Edit
+## how to build and run
+-The program expects input from stdin in the following format:
 <dimension>
 <start_x> <start_y>
 <target_x> <target_y>
