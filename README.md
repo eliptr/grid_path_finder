@@ -8,18 +8,26 @@ This project simulates a vacuum cleaner navigating through a room represented as
 - It detects all valid "corner" positions that can be used to change direction.
 - It calculates the shortest viable path using a custom heuristic (A*-like approach).
 - Outputs the path as a series of directions:
+  
   L for Left
+  
   R for Right
+  
   U for Up
   D for Down
 - Visualizes the final path in the grid.
 
 ## how to build and run
 - The program expects input from stdin in the following format:
+
 <dimension>
+  
 <start_x> <start_y>
+
 <target_x> <target_y>
+
 <grid> (row by row, top to bottom)
+
 dimension: Integer for the size of the square grid (e.g., 10).
 start_x, start_y: Starting position of the vacuum.
 target_x, target_y: Target location to reach.
