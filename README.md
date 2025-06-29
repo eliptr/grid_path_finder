@@ -28,38 +28,49 @@ This project simulates a vacuum cleaner navigating through a room represented as
 
 <grid> (row by row, top to bottom)
 
-dimension: Integer for the size of the square grid (e.g., 10).
-start_x, start_y: Starting position of the vacuum.
-target_x, target_y: Target location to reach.
-grid: A grid of 0s (empty space) and 1s (obstacles), read top to bottom and left to right.
+- dimension: Integer for the size of the square grid (e.g., 10).
+- start_x, start_y: Starting position of the vacuum.
+- target_x, target_y: Target location to reach.
+- grid: A grid of 0s (empty space) and 1s (obstacles), read top to bottom and left to right.
 
-How to Build & Run
-bash
-gcc -o finder finder.c -lm
-./finder < input.txt
+- how to build and run
+  bash
+  gcc -o finder finder.c -lm
+  ./finder < input.txt
+
+## example
+- input.txt:
 
 5
+
 0 0
+
 4 4
+
 00000
+
 00100
+
 00100
+
 00100
+
 00000
-Output
-The path as a string of directions (e.g., RRRRDDDD).
-The updated grid with the path marked:
-2 for visited path
-3 for start and target positions
 
-How It Works
-Corner Detection: Identifies all corner points in the map that the vacuum can use to change direction.
+- Output:
+  - The path as a string of directions (e.g., RRRRDDDD).
+  - The updated grid with the path marked:
+  - 2 for visited path
+  - 3 for start and target positions
 
-Pathfinding: Uses a simplified custom A* algorithm prioritizing shortest travel distance and fewer turns.
+## How It Works
+- Corner Detection: Identifies all corner points in the map that the vacuum can use to change direction.
 
-Traversal Logic: Moves in straight lines between valid corners or endpoints only when the path is clear.
+- Pathfinding: Uses a simplified custom A* algorithm prioritizing shortest travel distance and fewer turns.
 
-Limitations
-Supports only axis-aligned movement (no diagonal).
+- Traversal Logic: Moves in straight lines between valid corners or endpoints only when the path is clear.
+
+##Limitations
 Assumes a square grid.
+
 No real-time interactivity — input and output are done via terminal.
