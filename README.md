@@ -58,8 +58,8 @@ This project simulates a vacuum cleaner navigating through a room represented as
 00000
 
 - Output:
-  - The path as a string of directions (e.g., RRRRDDDD).
-  - The updated grid with the path marked:
+   The path as a string of directions (e.g., RRRRDDDD). <br>
+   The updated grid with the path marked: <br>
   - 2 for visited path
   - 3 for start and target positions
 
