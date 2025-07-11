@@ -30,10 +30,10 @@ This project simulates a vacuum cleaner navigating through a room represented as
 - target_x, target_y: Target location to reach.
 - grid: A grid of 0s (empty space) and 1s (obstacles), read top to bottom and left to right.
 
-- how to build and run
-  bash
-  gcc -o finder finder.c -lm
-  ./finder < input.txt
+- how to build and run <br>
+  bash <br>
+  gcc -o finder finder.c -lm <br>
+  ./finder < input.txt <br>
 
 ## example
 - input.txt:
