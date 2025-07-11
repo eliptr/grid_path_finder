@@ -32,7 +32,7 @@ This project simulates a vacuum cleaner navigating through a room represented as
 
 - how to build and run <br>
   bash <br>
-  gcc -o finder finder.c -lm <br>
+  gcc -o finder grid_path_finder.c -lm <br>
   ./finder < input.txt <br>
 
 ## example
